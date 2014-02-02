@@ -39,6 +39,10 @@ body {
 	.main-container {
 		width: 340px;
 	}
+	.email-accepted, .email-rejected {
+		left: -130%;
+		top: 7px;
+	}
 }
 
 @media (max-width: 500px) {

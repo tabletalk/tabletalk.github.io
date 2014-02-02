@@ -76,5 +76,6 @@
 	addEvent(input, "click", inputClick);
 	addEvent(input, "keydown", inputKeyDown);
 	addEvent(input, "submit", onSubmit);
+	addEvent(input, "focusout", onSubmit);
 
 })();
