@@ -1,0 +1,143 @@
+@import "_reset";
+@import "_variables";
+
+html { 
+	background: url(../img/bg_full.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+}
+
+// icomoon font
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-gcwowm');
+	src:url('fonts/icomoon.eot?#iefix-gcwowm') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-gcwowm') format('woff'),
+		url('fonts/icomoon.ttf?-gcwowm') format('truetype'),
+		url('fonts/icomoon.svg?-gcwowm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main-container {
+	width: 540px;
+	position: absolute;
+	right: 7%;
+	padding-top: 28px;
+	text-align: center;
+	color: $TEXT_COLOR;
+	font-size: 17px;
+}
+
+@media (max-width: 600px) {
+	.main-container {
+		width: 340px;
+	}
+}
+
+@media (max-width: 500px) {
+	// covered by mobile.scss
+}
+
+.main-header {
+	margin-top: 10px;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.main-content {
+	margin-top: 44px;
+}
+
+.main-description {
+	margin-top: 30px;
+	letter-spacing: 0.7px;
+	line-height: 22px;
+}
+
+.main-stinger, .main-contact {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.main-stinger {
+	margin: 86px 0px 5px;
+	font-size: 33px;
+}
+
+.main-signup-box {
+	position: relative;
+	width: 330px;
+	margin: auto;
+}
+
+.main-mailinglist-signup {
+	width: 325px;
+	height: 38px;
+	border: 1px solid $TEXT_COLOR;
+	background-color: transparent;
+	font-size: 30px;
+	color: $TEXT_COLOR;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.email-accepted, .email-rejected {
+	display: none;
+	position: absolute;
+	right: -10px;
+	top: 4px;
+	font-size: 33px;
+
+	// icomoon icon font
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:before {
+		position: absolute;
+	}
+
+	&.visible {
+		display: inline-block;
+	}
+}
+
+.email-accepted:before {
+	content: "\e603";
+}
+
+.email-rejected:before {
+	content: "\e604";
+}
+
+.main-contact {
+	margin-top: 5px;
+	font-size: 52px;
+}
+
+a {
+	color: $TEXT_COLOR;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
