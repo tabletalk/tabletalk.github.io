@@ -89,14 +89,16 @@
 
 	var input = $(".main-mailinglist-signup")[0];
   
-  var link = $(".signup-a");
 
 	addEvent(input, "click", inputClick);
 	addEvent(input, "keydown", inputKeyDown);
 	addEvent(input, "submit", onSubmit);
 	addEvent(input, "focusout", onSubmit);
 
-  // submit email when you click 'stay in touch'
-  addEvent(link, "click", onSubmit);
+	var link = $(".main-contact > a")[0];
+	// submit email when you click 'stay in touch'
+	addEvent(link, "click", function() {
+		emailSubmit(input.value);
+	});
 
 })();
