@@ -2,7 +2,7 @@
 @import "_variables";
 
 html { 
-	background: url(../img/bg_full.jpg) no-repeat center center fixed; 
+	background: url(../img/bg_crop.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -11,6 +11,7 @@ html {
 
 body {
 	font-family: "PT Sans", sans-serif;
+	overflow: hidden;
 }
 
 // icomoon font
@@ -35,6 +36,7 @@ body {
 	text-align: center;
 	color: $TEXT_COLOR;
 	font-size: 16px;
+	padding: 0px 16px 0px 16px;
 }
 
 @media (max-width: 800px) {
@@ -49,11 +51,11 @@ body {
 
 	.main-container {
     position: relative;
+	width: 100%;
     right: 0;
     left: 0;
     margin-left: auto;
     margin-right: auto;
-		width: 100%;
 	}
 	
   .main-description {
@@ -79,10 +81,6 @@ body {
   font-weight: 700;
   letter-spacing: 4px;
 	text-transform: uppercase;
-}
-
-.main-content {
-	margin-top: 44px;
 }
 
 .main-description {
@@ -178,10 +176,6 @@ body {
 a {
 	color: $TEXT_COLOR;
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 .button {

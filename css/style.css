@@ -103,7 +103,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  /* line 43, ../sass/style.scss */
+  /* line 44, ../sass/style.scss */
   html {
     background: url(../img/bg_ipad.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -112,7 +112,7 @@ body {
     background-size: cover;
   }
 
-  /* line 51, ../sass/style.scss */
+  /* line 52, ../sass/style.scss */
   .main-container {
     position: relative;
     width: 100%;
@@ -122,24 +122,24 @@ body {
     margin-right: auto;
   }
 
-  /* line 60, ../sass/style.scss */
+  /* line 61, ../sass/style.scss */
   .main-description {
     margin-left: 15%;
     margin-right: 15%;
   }
 }
 @media (max-width: 600px) {
-  /* line 68, ../sass/style.scss */
+  /* line 69, ../sass/style.scss */
   .main-description {
     font-size: 15px;
   }
 }
-/* line 80, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .logo {
   margin-top: 32px;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .main-header {
   margin-top: 10px;
   font-size: 40px;
@@ -148,7 +148,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .main-description {
   margin-top: 30px;
   letter-spacing: 0.7px;
@@ -157,12 +157,12 @@ body {
   margin-right: 10%;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .main-stinger, .main-contact {
   letter-spacing: 1px;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .main-stinger {
   margin: 40px 0px 16px;
   font-size: 33px;
@@ -170,14 +170,14 @@ body {
   color: white;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .main-signup-box {
   position: relative;
   width: 330px;
   margin: auto;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .main-mailinglist-signup {
   width: 325px;
   height: 38px;
@@ -189,12 +189,12 @@ body {
   font-size: 22px;
   color: rgba(230, 230, 230, 0.5);
 }
-/* line 134, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .main-mailinglist-signup:focus {
   background-color: rgba(18, 18, 18, 0.6);
 }
 
-/* line 139, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .email-accepted, .email-rejected {
   display: none;
   position: relative;
@@ -214,28 +214,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 161, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .email-accepted:before, .email-rejected:before {
   position: absolute;
 }
-/* line 165, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .email-accepted.visible, .email-rejected.visible {
   display: inline;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .email-accepted:before {
   content: "\e603";
   color: #becd74;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .email-rejected:before {
   content: "\e604";
   color: #e94141;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .main-contact {
   margin-top: 10px;
   font-size: 32px;
@@ -244,13 +244,13 @@ body {
   padding-bottom: 90px;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 a {
   color: #fffeff;
   text-decoration: none;
 }
 
-/* line 196, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .button {
   margin-top: 10px;
   margin-right: 10px;
@@ -265,17 +265,17 @@ a {
   color: #fff;
   background-color: #3fb8e8;
 }
-/* line 210, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .button:hover {
   background-color: #1baae3;
 }
-/* line 213, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .button:active {
   box-shadow: 0px 1px 0px 0px #3293ba;
   margin-bottom: -1px;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 br {
   height: 10px;
 }
