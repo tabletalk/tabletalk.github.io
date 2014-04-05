@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 4, ../sass/style.scss */
 html {
-  background: url(../img/bg_full.jpg) no-repeat center center fixed;
+  background: url(../img/bg_crop.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -77,6 +77,7 @@ html {
 /* line 12, ../sass/style.scss */
 body {
   font-family: "PT Sans", sans-serif;
+  overflow: hidden;
 }
 
 @font-face {
@@ -87,7 +88,7 @@ body {
   font-style: normal;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .main-container {
   background: rgba(18, 18, 18, 0.5);
   width: 540px;
@@ -98,10 +99,11 @@ body {
   text-align: center;
   color: #fffeff;
   font-size: 16px;
+  padding: 0px 16px 0px 16px;
 }
 
 @media (max-width: 800px) {
-  /* line 42, ../sass/style.scss */
+  /* line 43, ../sass/style.scss */
   html {
     background: url(../img/bg_ipad.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -110,34 +112,34 @@ body {
     background-size: cover;
   }
 
-  /* line 50, ../sass/style.scss */
+  /* line 51, ../sass/style.scss */
   .main-container {
     position: relative;
+    width: 100%;
     right: 0;
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
   }
 
-  /* line 59, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   .main-description {
     margin-left: 15%;
     margin-right: 15%;
   }
 }
 @media (max-width: 600px) {
-  /* line 67, ../sass/style.scss */
+  /* line 68, ../sass/style.scss */
   .main-description {
     font-size: 15px;
   }
 }
-/* line 72, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .logo {
   margin-top: 32px;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .main-header {
   margin-top: 10px;
   font-size: 40px;
@@ -146,12 +148,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 84, ../sass/style.scss */
-.main-content {
-  margin-top: 44px;
-}
-
-/* line 88, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .main-description {
   margin-top: 30px;
   letter-spacing: 0.7px;
@@ -160,12 +157,12 @@ body {
   margin-right: 10%;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .main-stinger, .main-contact {
   letter-spacing: 1px;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .main-stinger {
   margin: 40px 0px 16px;
   font-size: 33px;
@@ -173,14 +170,14 @@ body {
   color: white;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .main-signup-box {
   position: relative;
   width: 330px;
   margin: auto;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .main-mailinglist-signup {
   width: 325px;
   height: 38px;
@@ -192,12 +189,12 @@ body {
   font-size: 22px;
   color: rgba(230, 230, 230, 0.5);
 }
-/* line 124, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .main-mailinglist-signup:focus {
   background-color: rgba(18, 18, 18, 0.6);
 }
 
-/* line 129, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .email-accepted, .email-rejected {
   display: none;
   position: relative;
@@ -217,28 +214,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 151, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .email-accepted:before, .email-rejected:before {
   position: absolute;
 }
-/* line 155, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .email-accepted.visible, .email-rejected.visible {
   display: inline;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .email-accepted:before {
   content: "\e603";
   color: #becd74;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .email-rejected:before {
   content: "\e604";
   color: #e94141;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .main-contact {
   margin-top: 10px;
   font-size: 32px;
@@ -247,18 +244,13 @@ body {
   padding-bottom: 90px;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 a {
   color: #fffeff;
   text-decoration: none;
 }
 
-/* line 183, ../sass/style.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 187, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .button {
   margin-top: 10px;
   margin-right: 10px;
@@ -273,17 +265,17 @@ a:hover {
   color: #fff;
   background-color: #3fb8e8;
 }
-/* line 200, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .button:hover {
   background-color: #1baae3;
 }
-/* line 203, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .button:active {
   box-shadow: 0px 1px 0px 0px #3293ba;
   margin-bottom: -1px;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 br {
   height: 10px;
 }

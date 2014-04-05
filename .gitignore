@@ -1,3 +1,4 @@
 *.sass-cache*
 gandi_readme.txt
 api/*
+site_info.txt

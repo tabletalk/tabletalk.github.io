@@ -49,6 +49,12 @@
 		else rejectEmail();
 	}
 
+  function animateSuccess() { 
+    $(this).animate({
+      backgroundColor: $.Color(170, 238, 230, 0.5)
+    });
+  }
+
 	// s/o to SO http://stackoverflow.com/a/46181
 	function validateEmail(email) { 
 	    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -62,6 +68,16 @@
 		request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		request.send("email="+encodeURIComponent(email));
 
+    /* trigger css animation if we get a 200 response from api
+
+    request.onreadystatechange = function() { 
+      if (request.readyState == 4 && request.status == 200) {
+        $("main-mailinglist-signup").animateSuccess();
+      }
+    }
+
+    */
+
 		removeClass($(".email-rejected")[0], "visible");
 		addClass($(".email-accepted")[0], "visible");
 	}
@@ -72,10 +88,15 @@
 	}
 
 	var input = $(".main-mailinglist-signup")[0];
+  
+  var link = $(".signup-a");
 
 	addEvent(input, "click", inputClick);
 	addEvent(input, "keydown", inputKeyDown);
 	addEvent(input, "submit", onSubmit);
 	addEvent(input, "focusout", onSubmit);
+
+  // submit email when you click 'stay in touch'
+  addEvent(link, "click", onSubmit);
 
 })();
