@@ -139,15 +139,13 @@ body {
   margin-top: 32px;
 }
 
-/* line 78, ../sass/style.scss */
-.main-header {
-  margin-top: 10px;
-  font-size: 40px;
+/* .main-header {
+	margin-top: 10px;
+	font-size: 40px;
   font-weight: 700;
   letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
+	text-transform: uppercase;
+} */
 /* line 86, ../sass/style.scss */
 .main-description {
   margin-top: 30px;

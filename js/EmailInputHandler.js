@@ -95,7 +95,7 @@
 	addEvent(input, "submit", onSubmit);
 	addEvent(input, "focusout", onSubmit);
 
-	var link = $(".main-contact > a")[0];
+	var link = $(".main-contact > span")[0];
 	// submit email when you click 'stay in touch'
 	addEvent(link, "click", function() {
 		emailSubmit(input.value);
