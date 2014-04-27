@@ -19,20 +19,20 @@ body {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?-gcwowm');
 	src:url('fonts/icomoon.eot?#iefix-gcwowm') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-gcwowm') format('woff'),
-		url('fonts/icomoon.ttf?-gcwowm') format('truetype'),
-		url('fonts/icomoon.svg?-gcwowm#icomoon') format('svg');
+	url('fonts/icomoon.woff?-gcwowm') format('woff'),
+	url('fonts/icomoon.ttf?-gcwowm') format('truetype'),
+	url('fonts/icomoon.svg?-gcwowm#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 .main-container {
-  background: rgba(18, 18, 18, 0.5);
+	background: rgba(18, 18, 18, 0.5);
 	width: 540px;
 	position: absolute;
 	right: 7%;
-  margin-top: 0px;
-  margin-bottom: 6px;
+	margin-top: 0px;
+	margin-bottom: 6px;
 	text-align: center;
 	color: $TEXT_COLOR;
 	font-size: 16px;
@@ -40,25 +40,25 @@ body {
 }
 
 @media (max-width: 800px) {
-  
-  html {
-    background: url(../img/bg_ipad.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+	
+	html {
+		background: url(../img/bg_ipad.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 
 	.main-container {
-    position: relative;
-	width: 100%;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+		position: relative;
+		width: 100%;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
-  .main-description {
+	.main-description {
 		margin-left: 15%;
 		margin-right: 15%;
 	}
@@ -66,20 +66,28 @@ body {
 
 @media (max-width: 600px) {
 	// covered by mobile.scss
-  .main-description {
-    font-size: 15px;
-  }
+	.main-description {
+		font-size: 15px;
+	}
+}
+
+.main-call {
+	margin-top: 12px;
+
+	a {
+		text-decoration: underline;
+	}
 }
 
 .logo {
-  margin-top: 32px;
+	margin-top: 32px;
 }
 
 /* .main-header {
 	margin-top: 10px;
 	font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 4px;
+	font-weight: 700;
+	letter-spacing: 4px;
 	text-transform: uppercase;
 } */
 
@@ -87,8 +95,8 @@ body {
 	margin-top: 30px;
 	letter-spacing: 0.7px;
 	line-height: 22px;
-  margin-left: 10%;
-  margin-right: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .main-stinger, .main-contact {
@@ -98,8 +106,8 @@ body {
 .main-stinger {
 	margin: 40px 0px 16px;
 	font-size: 33px;
-  letter-spacing: 2px;
-  color: white;
+	letter-spacing: 2px;
+	color: white;
 }
 
 .main-signup-box {
@@ -112,9 +120,9 @@ body {
 	width: 325px;
 	height: 38px;
 	border: 0;
-  outline: none;
-  padding: 3px 6px 3px 6px;
-  border-radius: 8px;
+	outline: none;
+	padding: 3px 6px 3px 6px;
+	border-radius: 8px;
 	background-color: rgba(18, 18, 18, 0.5);
 	font-size: 22px;
 	color: rgba(230, 230, 230, 0.5);
@@ -127,11 +135,11 @@ body {
 .email-accepted, .email-rejected {
 	display: none;
 	position: relative;
-  padding: 0;
-  margin: 0;
-  left: 350px;
-  bottom: 30px;
-  font-size: 16px;
+	padding: 0;
+	margin: 0;
+	left: 350px;
+	bottom: 30px;
+	font-size: 16px;
 
 	// icomoon icon font
 	font-family: 'icomoon';
@@ -157,20 +165,20 @@ body {
 
 .email-accepted:before {
 	content: "\e603";
-  color: #becd74;
+	color: #becd74;
 }
 
 .email-rejected:before {
 	content: "\e604";
-  color: #e94141;
+	color: #e94141;
 }
 
 .main-contact {
 	margin-top: 10px;
 	font-size: 32px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  padding-bottom: 90px;
+	font-weight: 200;
+	letter-spacing: 2px;
+	padding-bottom: 90px;
 }
 
 a {
@@ -179,28 +187,30 @@ a {
 }
 
 .button {
-  margin-top: 10px; 
-  margin-right: 10px;
-  padding: 8px 13px;
-  font-size: 16px;
-  color: #fff;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
-  color: #fff;
-  background-color: #3fb8e8;
-  &:hover {
-    background-color: #1baae3;
-  }
-  &:active {
-    box-shadow: 0px 1px 0px 0px #3293ba;
-    margin-bottom: -1px;
-  }
+	margin-top: 10px; 
+	margin-right: 10px;
+	padding: 8px 13px;
+	font-size: 16px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.2s ease-in-out;
+	color: #fff;
+	background-color: #3fb8e8;
+
+	&:hover {
+		background-color: #1baae3;
+	}
+
+	&:active {
+		box-shadow: 0px 1px 0px 0px #3293ba;
+		margin-bottom: -1px;
+	}
 }
 
 br {
-  height: 10px;
+	height: 10px;
 }
 
